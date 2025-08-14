@@ -57,7 +57,7 @@ The script processes each frame, tracks objects across frames, saves an annotate
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/object-tracking-system.git
+   git clone https://github.com/Ayanfe03/object-tracking-system.git
    cd object-tracking-system
    ```
 
