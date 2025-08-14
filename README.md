@@ -2,7 +2,7 @@
 
 ## Overview
 This project implements object detection and tracking on videos using the YOLOv8 model from the Ultralytics library.  
-The script processes each frame, tracks objects across frames, saves an annotated video, and generate a JSON file with per-frame detections of the detected objects in list format.
+The script processes each frame, tracks objects across frames, saves an annotated video, and generates a JSON file with per-frame detections of the detected objects in list format.
 
 ## Features
 - Detects and tracks objects across video frames.
