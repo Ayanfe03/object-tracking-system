@@ -5,3 +5,4 @@ tracked/
 *.avi
 *.mov
 *.json
+yolov8s.pt
