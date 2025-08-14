@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+tracked/
+*.mp4
+*.avi
+*.mov
+*.json
