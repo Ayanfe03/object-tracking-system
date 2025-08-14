@@ -2,12 +2,12 @@
 
 ## Overview
 This project implements object detection and tracking on videos using the YOLOv8 model from the Ultralytics library.  
-The script processes each frame, tracks objects across frames, saves an annotated video, and exports a JSON file with per-frame detections.
+The script processes each frame, tracks objects across frames, saves an annotated video, and generate a JSON file with per-frame detections of the detected objects in list format.
 
 ## Features
 - Detects and tracks objects across video frames.
 - Saves annotated video with bounding boxes, object IDs and class names.
-- Exports a `detections.json` file with structure:
+- Generates a `detections.json` file with structure:
   ```json
   {
     "Frame_1": [{"id":1,"class":"car"}, {"id":2,"class":"person"}],
@@ -45,11 +45,11 @@ The script processes each frame, tracks objects across frames, saves an annotate
 6. **Metrics Calculation**  
    - Count total frames, detections, unique tracked IDs, and calculate FPS.
    
-7. **JSON Export**  
-   - Save all detections in a structured JSON file.
+7. **JSON Detections File**  
+   - Save all detections of the detected objects in list format for each frame in a structured JSON file.
    
 8. **Results**  
-   - Produce both a playable annotated video and a JSON log for further analysis.
+   - Produce a playable annotated video and a JSON log for further analysis.
 
 ---
 
@@ -98,9 +98,10 @@ python src/tracker.py --video "sample_video.avi"
 ## Requirements
 - Python 3.8+
 - GPU recommended for faster processing
-- OpenCV
-- Ultralytics YOLOv8
-- NumPy
+- OpenCV (`opencv-python`)
+- Ultralytics YOLOv8 (`ultralytics`)
+- NumPy (`numpy`)
+- lapx (for object tracking with YOLOv8)
 
 ---
 
